@@ -27,7 +27,7 @@ class Controller():
 
     # init files
     d = directory(Constants.DIR)
-    files = d.read()
+    files = d.read(".cours")
     for file in files:
         self.addFile(file)
     d.close()
